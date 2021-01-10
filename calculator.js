@@ -2,18 +2,18 @@
 
 // Write if-statements here
 
-const num1 = prompt("Enter First Number");
+const num1 = parseInt(prompt("Enter First Number"));
 const opt = prompt("Select one of those Operations:- [ + , * , - , / , % ]");
-const num2 = prompt("Enter Second Number");
+const num2 = parseInt(prompt("Enter Second Number"));
 
 if (opt === "+") {
-  console.log(`${num1}+${num2} = ${parseInt(num1) + parseInt(num2)}`);
+  console.log(`${num1}+${num2} = ${num1 + num2}`);
 } else if (opt === "-") {
-  console.log(`${num1}-${num2} = ${parseInt(num1) - parseInt(num2)}`);
+  console.log(`${num1}-${num2} = ${num1 - num2}`);
 } else if (opt === "*") {
-  console.log(`${num1}*${num2} = ${parseInt(num1) * parseInt(num2)}`);
+  console.log(`${num1}*${num2} = ${num1 * num2}`);
 } else if (opt === "/") {
-  console.log(`${num1}/${num2} = ${parseInt(num1) / parseInt(num2)}`);
+  console.log(`${num1}/${num2} = ${num1 / num2}`);
 } else if (opt === "%") {
-  console.log(`${num1}%${num2} = ${parseInt(num1) % parseInt(num2)}`);
+  console.log(`${num1}%${num2} = ${num1 % num2}`);
 }
